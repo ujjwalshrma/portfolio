@@ -1,0 +1,168 @@
+@font-face {
+  font-family: "Mitera";
+  src: url(./assets/fonts/Mitera-Regular.woff);
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+
+  background: #f3f3f3;
+
+  color: #252525;
+}
+
+html {
+  font-size: calc(100vw / 1920 * 10);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  padding-bottom: 10rem;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 2.4rem;
+  letter-spacing: 0.01em;
+}
+
+a {
+  color: #252525;
+  text-decoration: none;
+}
+
+p.bold {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 168rem;
+  margin: 0 auto;
+}
+
+#smooth-content {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.line-wrapper {
+  overflow: hidden;
+}
+
+.bg__lines {
+  max-width: 168rem;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.04;
+}
+
+.column {
+  width: 15rem;
+  height: 100vh;
+  border-right: 0.5px solid #252526;
+  border-left: 0.5px solid #252526;
+}
+
+/* hero section */
+#hero {
+  margin-top: 40rem;
+}
+
+#hero p {
+  max-width: 51.1rem;
+}
+
+.hero__content {
+  display: flex;
+  align-items: flex-end;
+  gap: 10.2rem;
+}
+
+.arrow {
+  width: 7rem;
+}
+
+.squares {
+  width: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* heading */
+.heading {
+  margin-top: 11rem;
+  font-size: 8.45rem;
+  font-family: Mitera;
+  line-height: 13rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* about para */
+#about {
+  margin-top: 21.5rem;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding-right: 46rem;
+  margin-bottom: 30rem;
+}
+
+.about__para {
+  max-width: 49rem;
+}
+
+.about__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 14.3rem;
+}
+
+.about__heading__wrapper img {
+  width: 4.9rem;
+  margin-top: 3rem;
+}
+
+#projects {
+  margin-bottom: 20rem;
+}
+
+.project__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25.5rem;
+}
+
+.project__wrapper img {
+  width: 119.1rem;
+}
+
+.project__img__wrapper {
+  overflow: hidden;
+}
+
+.project__text {
+  max-width: 34rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
