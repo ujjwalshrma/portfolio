@@ -27,7 +27,7 @@ export const textAnimation = () => {
     if (text.classList.contains("delay")) {
       tl.fromTo(
         splitText.lines,
-        { yPercent: 100 },
+        { yPercent: 103 },
         { yPercent: 0, ease: "power4.out", duration: 1.7, stagger: 0.2, delay: 1.5 }
       );
 

@@ -59,6 +59,89 @@ p.bold {
   overflow: hidden;
 }
 
+nav {
+  margin-top: 2.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.nav__wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.nav__wrapper ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav__wrapper ul li {
+  height: 2rem;
+  overflow: hidden;
+  position: relative;
+  padding: 0 0.5rem;
+}
+
+.nav__wrapper ul li p {
+  text-align: right;
+  transition: all 0.5s ease;
+}
+
+.nav__wrapper ul li:hover p {
+  color: #f3f3f3;
+}
+
+.nav__wrapper ul li:hover::before {
+  top: 0;
+}
+
+.nav__wrapper ul li::before {
+  content: "";
+  position: absolute;
+  top: 101%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #252525;
+  pointer-events: none;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+.logo {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.logo:hover {
+  color: #f3f3f3;
+}
+
+.logo:hover::before {
+  top: 0;
+}
+
+.logo::before {
+  content: "";
+  position: absolute;
+  top: 101%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #252525;
+  pointer-events: none;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
 .bg__lines {
   max-width: 168rem;
   margin: 0 auto;
@@ -165,4 +248,67 @@ p.bold {
   align-items: flex-start;
   justify-content: space-between;
   flex-direction: column;
+}
+
+/* MOBILE */
+@media screen and (max-width: 500px) {
+  html {
+    font-size: calc(100vw / 500 * 10);
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #hero {
+    margin-top: 20rem;
+  }
+
+  .hero__content {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .hero__content p {
+    width: 100%;
+  }
+
+  .heading {
+    font-size: 4.3rem;
+    line-height: 6.4rem;
+    text-align: left;
+  }
+
+  #about {
+    padding: 0 2rem;
+    width: 100%;
+  }
+
+  .about__content {
+    justify-content: space-between;
+    gap: 0;
+    width: 100%;
+  }
+
+  .about__para {
+    width: 276px;
+  }
+  
+  .project__wrapper {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .project__text {
+    max-width: 100%;
+    gap: 2rem;
+  }
+
+  .project__wrapper img {
+    height: 40rem;
+  }
 }
