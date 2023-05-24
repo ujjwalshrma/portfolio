@@ -311,4 +311,17 @@ nav {
   .project__wrapper img {
     height: 40rem;
   }
+
+  .bg__lines {
+    width: 100%;
+    padding: 0rem 2rem;
+  }
+
+  .column {
+    width: 20%;
+  }
+
+  .desktop {
+    display: none;
+  }
 }
